@@ -15,11 +15,34 @@
   </div>
 </div>
 
-<div class="container text-center mt-5">
-  <h2>Sobre o Projeto</h2>
-  <p class="text-muted">
-    Este sistema foi desenvolvido para apoiar iniciativas de prevenção, oferecendo
-    conteúdos acessíveis e informações sobre instituições que podem ajudar.
-  </p>
+<div class="container mt-5">
+  <h2 class="mb-4">Materiais em destaque</h2>
+  <div class="row">
+    <div class="col-md-6 mb-3" *ngFor="let material of previewMaterials">
+      <div class="card h-100 material-card">
+        <img [src]="material.imageUrl" class="card-img-top" [alt]="material.title">
+        <div class="card-body">
+          <h5 class="card-title">{{ material.title }}</h5>
+          <p class="card-text">{{ material.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a routerLink="/materiais" class="btn btn-primary mt-3">Ver todos os materiais</a>
 </div>
 
+<div class="container mt-5">
+  <h2 class="mb-4">Recursos de Ajuda</h2>
+  <div class="row">
+    <div class="col-md-6 mb-3" *ngFor="let resource of previewHelp">
+      <div class="card help-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{ resource.name }}</h5>
+          <p>{{ resource.description }}</p>
+          <p class="fw-bold">{{ resource.phone }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a routerLink="/ajuda" class="btn btn-primary mt-3">Ver todos os recursos</a>
+</div>
