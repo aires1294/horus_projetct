@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos Globais */
+:root {
+  --primary-color: #2c5530;
+  --secondary-color: #4a7c59;
+  --accent-color: #8fb996;
+}
+
+.material-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.material-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.help-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-left: 4px solid var(--primary-color);
+}
+
+.btn-success {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-success:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.hero-section {
+  background: linear-gradient(rgba(44, 85, 48, 0.8), rgba(44, 85, 48, 0.8)),
+              url('/assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+}
