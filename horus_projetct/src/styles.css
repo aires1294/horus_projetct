@@ -39,3 +39,25 @@
   color: white;
   padding: 100px 0;
 }
+.hero-section {
+  background: linear-gradient(rgba(44, 85, 48, 0.85), rgba(44, 85, 48, 0.85)),
+              url('/assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 0;
+  border-radius: 0 0 20px 20px;
+}
+
+.hero-section h1 {
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+}
+
+.hero-section .btn-lg {
+  padding: 12px 30px;
+  border-radius: 8px;
+}
